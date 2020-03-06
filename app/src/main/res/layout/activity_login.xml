@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/etNavUrl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="导航地址"
+        android:paddingStart="20dp"
+        android:text="https://i.startalk.im/newapi/nck/qtalk_nav.qunar?c=hngdsoft.com"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNavUrl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="配置导航地址"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etNavUrl" />
+
+    <EditText
+        android:id="@+id/etAccount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="账号"
+        android:paddingStart="20dp"
+        android:text="18538117822"
+        app:layout_constraintTop_toBottomOf="@id/btnNavUrl" />
+
+    <EditText
+        android:id="@+id/etPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="密码"
+        android:paddingStart="20dp"
+        android:text="34445131"
+        app:layout_constraintTop_toBottomOf="@id/etAccount" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="登录"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etPwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
